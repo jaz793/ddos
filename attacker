@@ -1,0 +1,13 @@
+import requests
+import time
+
+url = "http://www.example.com"
+
+while True:
+    try:
+        response = requests.get(url)
+        print(response.text)  # Print response content (or use response.status_code to check status)
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    
+    time.sleep(0)  # Optional delay between requests
